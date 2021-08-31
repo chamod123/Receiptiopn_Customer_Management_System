@@ -17,7 +17,7 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/customer_save', 'HomeController@index')->name('home');
+Route::get('/customer_save', 'HomeController@customer_save')->name('home');
 //Route::get('/home', 'HomeController@index')->name('home');
 
 Auth::routes();

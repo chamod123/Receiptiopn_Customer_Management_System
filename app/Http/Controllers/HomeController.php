@@ -25,4 +25,9 @@ class HomeController extends Controller
     {
         return view('home');
     }
+
+    public function customer_save()
+    {
+        return view('customer.save_customer');
+    }
 }
