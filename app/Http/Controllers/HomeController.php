@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\FloorModel;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -28,6 +29,9 @@ class HomeController extends Controller
 
     public function customer_save()
     {
-        return view('customer.save_customer');
+        $floors = FloorModel::all();
+        return view('customer.save_customer',[
+            'floors' => $floors
+        ]);
     }
 }
