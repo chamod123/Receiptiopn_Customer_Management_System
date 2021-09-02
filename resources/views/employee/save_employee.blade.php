@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="container">
-        <h3>Save Customer Walking</h3>
+        <h3>Register New Employee</h3>
 
         <br>
         <form id="FormId" action="#" method="post">
@@ -12,41 +12,30 @@
             {{--</div>--}}
             {{csrf_field()}}
             <div class="row" style="margin-top: 10px">
-                <label class="col-md-3">NIC</label>
-                <input class="col-md-8" id="nic" name="nic" placeholder="NIC">
+                <label class="col-md-3">Employee Name</label>
+                <input class="col-md-8" id="employee_name" name="employee_name" placeholder="Employee Name">
             </div>
             <div class="row" style="margin-top: 10px">
-                <label class="col-md-3">Contact Number</label>
-                <input class="col-md-8" id="mobile" name="mobile" placeholder="Contact Number" required>
+                <label class="col-md-3">Employee Code</label>
+                <input class="col-md-8" id="employee_code" name="employee_code" placeholder="Employee Code" required>
             </div>
             <div class="row" style="margin-top: 10px">
-                <label class="col-md-3">Number Of Walking</label>
-                <input class="col-md-8" id="no_of_walking" name="no_of_walking" placeholder="Number Of Walking"
-                       required>
+                <label class="col-md-3">Mobile Number</label>
+                <input class="col-md-8" id="mobile" name="mobile" placeholder="Mobile Number" required>
             </div>
             <div class="row" style="margin-top: 10px">
-                <label class="col-md-3">Floor</label>
-                <div class="col-md-8 row" id="floor_dev" name="floor_dev">
-                    @foreach($floors as $floor)
-                        <label style="border: #27cf1a 1px solid;margin: 20px;border-radius: 10px">
-                            <input type="radio" class="radio" value="{{$floor->id}}" name="floor" id="floor"
-                                   style="margin: 5px" onclick="load_floor_units({{$floor->id}})" required/>
-                            <span style="margin: 15px">{{$floor->floor_name}}</span>
-                        </label>
-                        {{--<a class="btn btn-success" style="width: 100px; margin: 10px;color: white" onclick="load_floor_units({{$floor->id}})">{{$floor->floor_name}}</a>--}}
-                    @endforeach
-                </div>
+                <label class="col-md-3">Email</label>
+                <input class="col-md-8" id="email" name="email" placeholder="Email" required>
             </div>
-            <hr>
             <div class="row" style="margin-top: 10px">
-                <label class="col-md-3"></label>
-                <div class="col-md-8 row" id="floor_units" name="floor_units">
-
-                </div>
+                <label class="col-md-3">Password</label>
+                <input class="col-md-8" id="password" name="password" placeholder="Password" required>
             </div>
             <div class="row" style="margin-top: 10px">
                 <a onclick="save_customer_walking()" class="btn btn-success" style="width: 150px">Save Details</a>
             </div>
+
+
         </form>
     </div>
 @endsection
@@ -54,44 +43,27 @@
 @section('footerScript')
     <script type="text/javascript">
 
-        function load_floor_units(floor_id) {
-
-            $.ajax({
-                url: '/get_units_by_floor/' + floor_id,
-                type: 'get',
-                // data: $("#FormId").serialize(),
-                success: function (data) {
-                    console.log(data);
-                    $('#floor_units').html('');
-                    for (i = 0; data.length > i; i++) {
-
-
-                        $('#floor_units').append('' +
-                            '' +
-                            ' <label style="border: #ff0653 1px solid;margin: 20px;border-radius: 10px">\n' +
-                            '                            <input type="radio" class="radio" value="' + data[i].id + '" name="floor_unit" style="margin: 5px" required />\n' +
-                            '                            <span style="margin: 15px">' + data[i].unit_name + '</span>\n' +
-                            '                        </label>' +
-                            '');
-                    }
-
-
-                },
-                error: function () {
-                }
-            });
-        }
-
-
         function save_customer_walking() {
             // e.preventDefault();
             var validFunction = true;
 
-            if ($('#nic').val() == '') {
+            if ($('#employee_name').val() == '') {
                 Swal.fire({
                     position: 'center',
                     icon: 'error',
-                    title: 'NIC Required!',
+                    title: 'Employee Name Required!',
+                    showConfirmButton: false,
+                    timer: 1200
+                })
+                validFunction = false;
+                return;
+            }
+
+            if ($('#employee_code').val() == '') {
+                Swal.fire({
+                    position: 'center',
+                    icon: 'error',
+                    title: 'Employee Code Required!',
                     showConfirmButton: false,
                     timer: 1200
                 })
@@ -103,7 +75,7 @@
                 Swal.fire({
                     position: 'center',
                     icon: 'error',
-                    title: 'Mobile Required!',
+                    title: 'Mobile Number Required!',
                     showConfirmButton: false,
                     timer: 1200
                 })
@@ -111,11 +83,11 @@
                 return;
             }
 
-            if ($('#no_of_walking').val() == '') {
+            if ($('#email').val() == '') {
                 Swal.fire({
                     position: 'center',
                     icon: 'error',
-                    title: 'Walking Number Required!',
+                    title: 'Email Required!',
                     showConfirmButton: false,
                     timer: 1200
                 })
@@ -123,12 +95,11 @@
                 return;
             }
 
-
-            if (!$("input[name='floor']:checked").val()) {
+            if ($('#password').val() == '') {
                 Swal.fire({
                     position: 'center',
                     icon: 'error',
-                    title: 'Floor Required!',
+                    title: 'Password Required!',
                     showConfirmButton: false,
                     timer: 1200
                 })
@@ -136,22 +107,10 @@
                 return;
             }
 
-
-            if (!$("input[name='floor_unit']:checked").val()) {
-                Swal.fire({
-                    position: 'center',
-                    icon: 'error',
-                    title: 'Floor Unit Required!',
-                    showConfirmButton: false,
-                    timer: 1200
-                })
-                validFunction = false;
-                return;
-            }
 
             if (validFunction) {
                 $.ajax({
-                    url: '/save/customer_data',
+                    url: '/save/employee_data',
                     type: 'post',
                     data: $("#FormId").serialize(),
                     success: function (data) {
@@ -159,7 +118,7 @@
                         Swal.fire({
                             position: 'center',
                             icon: 'success',
-                            title: 'Customer Saved Successful!',
+                            title: 'Employee Saved Successful!',
                             showConfirmButton: false,
                             timer: 4200
                         }).then(

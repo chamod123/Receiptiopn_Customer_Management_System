@@ -3,11 +3,18 @@
 namespace App\Http\Controllers;
 
 use App\CustomerWalkingModel;
+use App\FloorModel;
 use Illuminate\Http\Request;
 
 class CustomerController extends Controller
 {
-
+    public function customer_save()
+    {
+        $floors = FloorModel::all();
+        return view('customer.save_customer',[
+            'floors' => $floors
+        ]);
+    }
 
     public function save_customer_walking(Request $request)
     {
@@ -21,6 +28,6 @@ class CustomerController extends Controller
         $customer->floor_units_id = $request->get("floor_unit");
         $customer->save();
 
-        return $customer;
+        return 'Save Successful';
     }
 }

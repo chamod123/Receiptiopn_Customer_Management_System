@@ -27,11 +27,5 @@ class HomeController extends Controller
         return view('home');
     }
 
-    public function customer_save()
-    {
-        $floors = FloorModel::all();
-        return view('customer.save_customer',[
-            'floors' => $floors
-        ]);
-    }
+
 }
