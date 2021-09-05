@@ -49,18 +49,18 @@
                     @guest
 
                         @if (Route::has('register'))
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-                            </li>
+                            {{--<li class="nav-item">--}}
+                                {{--<a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>--}}
+                            {{--</li>--}}
                         @endif
                     @else
 
                         <li class="nav-item">
-                            <a class="nav-link" href="/customer_save">Customer Walking</a>
+                            <a class="nav-link" href="/customer_save">Customer Walking &nbsp;&nbsp;&nbsp;&nbsp; </a>
                         </li>
                         @if(Auth::user()->user_type == 'admin')
                             <li class="nav-item">
-                                <a class="nav-link" href="/employee_save" style="color: #0145a3">New Employee</a>
+                                <a class="nav-link" href="/employee_save">Employee Registration &nbsp;&nbsp;&nbsp;&nbsp;</a>
                             </li>
                         @endif
 
