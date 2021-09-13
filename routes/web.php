@@ -33,3 +33,4 @@ Route::post('/save/employee_data', 'EmployeeController@save_employee_data');
 
 
 Route::get('/view_customer_walking', 'CustomerController@view_customer_walking');
+Route::post('/view_customer_walking', 'CustomerController@view_customer_walking');

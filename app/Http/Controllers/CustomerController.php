@@ -31,11 +31,35 @@ class CustomerController extends Controller
         return 'Save Successful';
     }
 
-    public function view_customer_walking()
+    public function view_customer_walking(Request $request)
     {
-        $floors = FloorModel::all();
+
+//        return $request;
+
+        $from_date = $request->get("from_date");
+        $to_date = $request->get("to_date");
+
+        if ($from_date != null && $from_date != '' && $to_date != null && $to_date != '') {
+            $special_messages = CustomerWalkingModel::select('customer_walking.*')
+                ->whereDate('customer_walking.created_at', '>=', $from_date)
+                ->whereDate('customer_walking.created_at', '<=', $to_date);
+
+//            return $special_messages->get();
+//            $data['report_data'] = ;
+            return view('customer.view_customer_walking',[
+                'from_date' => $from_date,
+                'to_date' => $to_date,
+                'report_data' => $special_messages->get(),
+            ]);
+        }
+
+
+
+
+
         return view('customer.view_customer_walking',[
-            'floors' => $floors
+            'from_date' => $from_date,
+            'to_date' => $to_date,
         ]);
     }
 
