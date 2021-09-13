@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1761770c-59d6-495d-8933-0db28ec8e515" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/customer/view_customer_walking.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CustomerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CustomerController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/customer/save_customer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/customer/save_customer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,17 +24,42 @@
       <file leaf-file-name="web.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="28" column="76" selection-start-line="28" selection-start-column="55" selection-end-line="28" selection-end-column="76" />
+            <state relative-caret-position="500">
+              <caret line="34" column="34" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CustomerController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CustomerController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CustomerController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+            <state relative-caret-position="537">
+              <caret line="36" column="51" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="view_customer_walking.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/customer/view_customer_walking.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="317">
+              <caret line="30" column="61" lean-forward="true" selection-start-line="30" selection-start-column="61" selection-end-line="30" selection-end-column="61" />
+              <folding>
+                <element signature="e#766#831#0#HTML" expanded="true" />
+                <element signature="e#846#878#0#HTML" expanded="true" />
+                <element signature="e#903#935#0#HTML" expanded="true" />
+                <element signature="e#965#1022#0#HTML" expanded="true" />
+                <element signature="e#1147#1204#0#HTML" expanded="true" />
+                <element signature="e#1251#1308#0#HTML" expanded="true" />
+                <element signature="e#1343#1400#0#HTML" expanded="true" />
+                <element signature="e#1184#1216#0#HTML" expanded="true" />
+                <element signature="e#1440#1472#0#HTML" expanded="true" />
+                <element signature="e#1503#1535#0#HTML" expanded="true" />
+                <element signature="e#1575#1607#0#HTML" expanded="true" />
+                <element signature="e#1641#1673#0#HTML" expanded="true" />
+                <element signature="e#1721#1753#0#HTML" expanded="true" />
+                <element signature="e#1789#1821#0#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -38,8 +67,13 @@
       <file leaf-file-name="save_customer.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/customer/save_customer.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3880">
-              <caret line="194" column="46" selection-start-line="194" selection-start-column="27" selection-end-line="194" selection-end-column="46" />
+            <state relative-caret-position="300">
+              <caret line="15" column="52" selection-start-line="15" selection-start-column="52" selection-end-line="15" selection-end-column="52" />
+              <folding>
+                <element signature="n#style#0;n#label#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#label#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#label#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -60,6 +94,7 @@
       <find>walking_10</find>
       <find>save_customer_walking</find>
       <find>save/customer_data'</find>
+      <find>customer_save</find>
     </findStrings>
   </component>
   <component name="FrameworkCommandLineHistory">
@@ -116,15 +151,16 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
         <option value="$PROJECT_DIR$/app/EmployeeModel.php" />
         <option value="$PROJECT_DIR$/database/migrations/2021_09_02_045845_create_employee.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/CustomerController.php" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/EmployeeController.php" />
         <option value="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" />
         <option value="$PROJECT_DIR$/resources/views/employee/save_employee.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/auth/login.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/welcome.blade.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/CustomerController.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/customer/save_customer.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/customer/view_customer_walking.blade.php" />
       </list>
     </option>
   </component>
@@ -373,7 +409,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Medirepe/MediRep_V6/iMediRep" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -416,7 +452,7 @@
       <workItem from="1630827324332" duration="1654000" />
       <workItem from="1630914094213" duration="638000" />
       <workItem from="1631427892485" duration="3033000" />
-      <workItem from="1631530752557" duration="1290000" />
+      <workItem from="1631530752557" duration="4189000" />
     </task>
     <task id="LOCAL-00001" summary="user registration and login">
       <created>1630321887535</created>
@@ -453,24 +489,32 @@
       <option name="project" value="LOCAL" />
       <updated>1630828446038</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Save Number Of Walking with the selected number">
+      <created>1631533567945</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1631533567945</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30385000" />
+    <option name="totallyTimeSpent" value="33284000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Command Line Tools Console" order="9" visible="true" weight="0.40965518" />
+      <window_info anchor="bottom" id="Command Line Tools Console" order="9" weight="0.40965518" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22526042" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22526042" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -520,7 +564,8 @@
     <MESSAGE value="save customer Walking" />
     <MESSAGE value="save New Employee" />
     <MESSAGE value="set style to login page" />
-    <option name="LAST_COMMIT_MESSAGE" value="set style to login page" />
+    <MESSAGE value="Save Number Of Walking with the selected number" />
+    <option name="LAST_COMMIT_MESSAGE" value="Save Number Of Walking with the selected number" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -528,13 +573,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CustomerController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
@@ -546,6 +584,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1740">
           <caret line="87" lean-forward="true" selection-start-line="87" selection-end-line="87" />
+          <folding>
+            <element signature="n#style#0;n#label#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#label#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#label#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -560,6 +603,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1460">
           <caret line="73" column="83" selection-start-line="73" selection-start-column="83" selection-end-line="73" selection-end-column="83" />
+          <folding>
+            <element signature="n#style#0;n#label#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#label#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#label#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -630,6 +678,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1660">
           <caret line="83" column="17" selection-start-line="83" selection-start-column="17" selection-end-line="83" selection-end-column="17" />
+          <folding>
+            <element signature="n#style#0;n#label#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#label#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#label#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -651,6 +704,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
           <caret line="19" column="18" lean-forward="true" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+          <folding>
+            <element signature="n#style#0;n#label#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#label#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#label#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -836,20 +894,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="62" column="96" selection-start-line="62" selection-start-column="96" selection-end-line="62" selection-end-column="96" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/customer/save_customer.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3880">
-          <caret line="194" column="46" selection-start-line="194" selection-start-column="27" selection-end-line="194" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/CustomerWalkingModel.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
@@ -857,17 +901,69 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CustomerController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="28" column="76" selection-start-line="28" selection-start-column="55" selection-end-line="28" selection-end-column="76" />
+        <state relative-caret-position="537">
+          <caret line="36" column="51" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="51" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CustomerController.php">
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+        <state relative-caret-position="500">
+          <caret line="34" column="34" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="517">
+          <caret line="65" column="101" selection-start-line="65" selection-start-column="101" selection-end-line="65" selection-end-column="101" />
+          <folding>
+            <element signature="e#2637#2643#0#HTML" expanded="true" />
+            <element signature="e#2643#2649#0#HTML" expanded="true" />
+            <element signature="e#2649#2655#0#HTML" expanded="true" />
+            <element signature="e#2655#2661#0#HTML" expanded="true" />
+            <element signature="e#2846#2852#0#HTML" expanded="true" />
+            <element signature="e#2852#2858#0#HTML" expanded="true" />
+            <element signature="e#2858#2864#0#HTML" expanded="true" />
+            <element signature="e#2864#2870#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/customer/save_customer.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="15" column="52" selection-start-line="15" selection-start-column="52" selection-end-line="15" selection-end-column="52" />
+          <folding>
+            <element signature="n#style#0;n#label#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#label#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#label#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/customer/view_customer_walking.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="30" column="61" lean-forward="true" selection-start-line="30" selection-start-column="61" selection-end-line="30" selection-end-column="61" />
+          <folding>
+            <element signature="e#766#831#0#HTML" expanded="true" />
+            <element signature="e#846#878#0#HTML" expanded="true" />
+            <element signature="e#903#935#0#HTML" expanded="true" />
+            <element signature="e#965#1022#0#HTML" expanded="true" />
+            <element signature="e#1147#1204#0#HTML" expanded="true" />
+            <element signature="e#1251#1308#0#HTML" expanded="true" />
+            <element signature="e#1343#1400#0#HTML" expanded="true" />
+            <element signature="e#1184#1216#0#HTML" expanded="true" />
+            <element signature="e#1440#1472#0#HTML" expanded="true" />
+            <element signature="e#1503#1535#0#HTML" expanded="true" />
+            <element signature="e#1575#1607#0#HTML" expanded="true" />
+            <element signature="e#1641#1673#0#HTML" expanded="true" />
+            <element signature="e#1721#1753#0#HTML" expanded="true" />
+            <element signature="e#1789#1821#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

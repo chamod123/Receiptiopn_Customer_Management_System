@@ -62,6 +62,9 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="/employee_save">Employee Registration &nbsp;&nbsp;&nbsp;&nbsp;</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/view_customer_walking">View Customers Data &nbsp;&nbsp;&nbsp;&nbsp;</a>
+                            </li>
                         @endif
 
 

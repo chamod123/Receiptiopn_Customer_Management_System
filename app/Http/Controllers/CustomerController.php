@@ -30,4 +30,14 @@ class CustomerController extends Controller
 
         return 'Save Successful';
     }
+
+    public function view_customer_walking()
+    {
+        $floors = FloorModel::all();
+        return view('customer.view_customer_walking',[
+            'floors' => $floors
+        ]);
+    }
+
+
 }

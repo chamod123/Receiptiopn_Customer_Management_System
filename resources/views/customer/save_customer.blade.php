@@ -13,11 +13,11 @@
             {{csrf_field()}}
             <div class="row" style="margin-top: 10px">
                 <label class="col-md-3">NIC</label>
-                <input class="col-md-8" id="nic" name="nic" placeholder="NIC">
+                <input class="col-md-8  form-control" id="nic" name="nic" placeholder="NIC">
             </div>
             <div class="row" style="margin-top: 10px">
                 <label class="col-md-3">Contact Number</label>
-                <input class="col-md-8" id="mobile" name="mobile" placeholder="Contact Number" required>
+                <input class="col-md-8 form-control" id="mobile" name="mobile" placeholder="Contact Number" required>
             </div>
             <div class="row" style="margin-top: 10px" hidden>
                 <label class="col-md-3" hidden>Number Of Walking</label>
