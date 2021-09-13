@@ -19,10 +19,35 @@
                 <label class="col-md-3">Contact Number</label>
                 <input class="col-md-8" id="mobile" name="mobile" placeholder="Contact Number" required>
             </div>
+            <div class="row" style="margin-top: 10px" hidden>
+                <label class="col-md-3" hidden>Number Of Walking</label>
+                <input class="col-md-8" id="no_of_walking" name="no_of_walking" placeholder="Number Of Walking" hidden
+                       required>
+            </div>
             <div class="row" style="margin-top: 10px">
                 <label class="col-md-3">Number Of Walking</label>
-                <input class="col-md-8" id="no_of_walking" name="no_of_walking" placeholder="Number Of Walking"
-                       required>
+                <div class="col-md-8 row">
+                    <label style="margin: 15px" class="btn btn-outline-info walking_btn" onclick="click_walking(1)"
+                           id="walking_1">1</label>
+                    <label style="margin: 15px" class="btn btn-outline-info walking_btn" onclick="click_walking(2)"
+                           id="walking_2">2</label>
+                    <label style="margin: 15px" class="btn btn-outline-info walking_btn" onclick="click_walking(3)"
+                           id="walking_3">3</label>
+                    <label style="margin: 15px" class="btn btn-outline-info walking_btn" onclick="click_walking(4)"
+                           id="walking_4">4</label>
+                    <label style="margin: 15px" class="btn btn-outline-info walking_btn" onclick="click_walking(5)"
+                           id="walking_5">5</label>
+                    <label style="margin: 15px" class="btn btn-outline-info walking_btn" onclick="click_walking(6)"
+                           id="walking_6">6</label>
+                    <label style="margin: 15px" class="btn btn-outline-info walking_btn" onclick="click_walking(7)"
+                           id="walking_7">7</label>
+                    <label style="margin: 15px" class="btn btn-outline-info walking_btn" onclick="click_walking(8)"
+                           id="walking_8">8</label>
+                    <label style="margin: 15px" class="btn btn-outline-info walking_btn" onclick="click_walking(9)"
+                           id="walking_9">9</label>
+                    <label style="margin: 15px" class="btn btn-outline-info walking_btn" onclick="click_walking(10)"
+                           id="walking_10">10</label>
+                </div>
             </div>
             <div class="row" style="margin-top: 10px">
                 <label class="col-md-3">Floor</label>
@@ -53,6 +78,32 @@
 
 @section('footerScript')
     <script type="text/javascript">
+
+        function click_walking(click_no) {
+            $('.walking_btn').css('background-color', 'white');
+            if (click_no == 1) {
+                document.getElementById('walking_1').style.backgroundColor = '#ff5f10';
+            } else if (click_no == 2) {
+                document.getElementById('walking_2').style.backgroundColor = '#ff5f10';
+            } else if (click_no == 3) {
+                document.getElementById('walking_3').style.backgroundColor = '#ff5f10';
+            } else if (click_no == 4) {
+                document.getElementById('walking_4').style.backgroundColor = '#ff5f10';
+            } else if (click_no == 5) {
+                document.getElementById('walking_5').style.backgroundColor = '#ff5f10';
+            } else if (click_no == 6) {
+                document.getElementById('walking_6').style.backgroundColor = '#ff5f10';
+            } else if (click_no == 7) {
+                document.getElementById('walking_7').style.backgroundColor = '#ff5f10';
+            } else if (click_no == 8) {
+                document.getElementById('walking_8').style.backgroundColor = '#ff5f10';
+            } else if (click_no == 9) {
+                document.getElementById('walking_9').style.backgroundColor = '#ff5f10';
+            } else if (click_no == 10) {
+                document.getElementById('walking_10').style.backgroundColor = '#ff5f10';
+            }
+            $('#no_of_walking').val(click_no)
+        }
 
         function load_floor_units(floor_id) {
 
