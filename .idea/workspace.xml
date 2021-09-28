@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1761770c-59d6-495d-8933-0db28ec8e515" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/app/EmployeeUIAccessModel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_09_28_172448_create_employee_ui_access.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/EmployeeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/EmployeeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/employee/save_employee.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/employee/save_employee.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,20 +28,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EmployeeController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="EmployeeController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/EmployeeController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="490">
-              <caret line="37" selection-start-line="37" selection-end-line="37" />
+            <state relative-caret-position="370">
+              <caret line="38" column="49" lean-forward="true" selection-start-line="38" selection-start-column="49" selection-end-line="38" selection-end-column="49" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="save_employee.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="save_employee.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/employee/save_employee.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="125" column="57" selection-start-line="125" selection-start-column="57" selection-end-line="125" selection-end-column="57" />
+            <state relative-caret-position="236">
+              <caret line="113" column="8" lean-forward="true" selection-start-line="113" selection-start-column="8" selection-end-line="113" selection-end-column="8" />
               <folding>
                 <element signature="e#144#206#0#HTML" expanded="true" />
                 <element signature="e#214#235#0#HTML" expanded="true" />
@@ -61,6 +61,15 @@
                 <element signature="e#4224#4244#0#HTML" expanded="true" />
                 <element signature="e#2007#2030#0#HTML" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2021_09_28_172448_create_employee_ui_access.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2021_09_28_172448_create_employee_ui_access.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="257">
+              <caret line="23" column="41" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -107,9 +116,6 @@
   </component>
   <component name="FrameworkCommandLineHistory">
     <commandsHistory>
-      <command text="php artisan make:migrate create_floor" />
-      <command text="php artisan make:migration create_floor" />
-      <command text="php artisan migrate" />
       <command text="php artisan make:model FloorModel" />
       <command text="php artisan make:model FloorUnitsModel" />
       <command text="php artisan make:controller FloorController" />
@@ -132,6 +138,9 @@
       <command text="php artisan clear-compiled" />
       <command text="php artisan config:cache" />
       <command text="php artisan serve" />
+      <command text="php artisan make:migration create_employee_ui_access" />
+      <command text="php artisan migrate" />
+      <command text="php artisan make:model EmployeeUIAccessModel" />
     </commandsHistory>
   </component>
   <component name="Git.Settings">
@@ -167,8 +176,10 @@
         <option value="$PROJECT_DIR$/resources/views/customer/view_customer_walking.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/customer/save_customer.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/EmployeeController.php" />
         <option value="$PROJECT_DIR$/resources/views/employee/save_employee.blade.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2021_09_28_172448_create_employee_ui_access.php" />
+        <option value="$PROJECT_DIR$/app/EmployeeUIAccessModel.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/EmployeeController.php" />
       </list>
     </option>
   </component>
@@ -470,7 +481,7 @@
       <workItem from="1632322670549" duration="599000" />
       <workItem from="1632365404841" duration="2076000" />
       <workItem from="1632579026694" duration="714000" />
-      <workItem from="1632848004284" duration="1781000" />
+      <workItem from="1632848004284" duration="2651000" />
     </task>
     <task id="LOCAL-00001" summary="user registration and login">
       <created>1630321887535</created>
@@ -528,11 +539,18 @@
       <option name="project" value="LOCAL" />
       <updated>1631547534439</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="employee access credential change screen">
+      <created>1632849847405</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1632849847405</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45194000" />
+    <option name="totallyTimeSpent" value="46064000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -599,7 +617,8 @@
     <MESSAGE value="Save Number Of Walking with the selected number" />
     <MESSAGE value="customer waking data showing report view" />
     <MESSAGE value="customer waking data showing report view by date range" />
-    <option name="LAST_COMMIT_MESSAGE" value="customer waking data showing report view by date range" />
+    <MESSAGE value="employee access credential change screen" />
+    <option name="LAST_COMMIT_MESSAGE" value="employee access credential change screen" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -607,20 +626,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="31" column="54" selection-start-line="31" selection-start-column="54" selection-end-line="31" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/customer/save_customer.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1460">
-          <caret line="73" column="83" selection-start-line="73" selection-start-column="83" selection-end-line="73" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
@@ -826,23 +831,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/EmployeeModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="33" lean-forward="true" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/User.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-163" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2021_09_02_045845_create_employee.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="77">
-          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/auth/login.blade.php">
@@ -935,17 +926,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/EmployeeController.php">
+    <entry file="file://$PROJECT_DIR$/database/migrations/2021_09_02_045845_create_employee.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
+        <state relative-caret-position="200">
+          <caret line="17" column="44" lean-forward="true" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/EmployeeModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="34" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/EmployeeUIAccessModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="27" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/employee/save_employee.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="125" column="57" selection-start-line="125" selection-start-column="57" selection-end-line="125" selection-end-column="57" />
+        <state relative-caret-position="236">
+          <caret line="113" column="8" lean-forward="true" selection-start-line="113" selection-start-column="8" selection-end-line="113" selection-end-column="8" />
           <folding>
             <element signature="e#144#206#0#HTML" expanded="true" />
             <element signature="e#214#235#0#HTML" expanded="true" />
@@ -965,6 +970,20 @@
             <element signature="e#4224#4244#0#HTML" expanded="true" />
             <element signature="e#2007#2030#0#HTML" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2021_09_28_172448_create_employee_ui_access.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="23" column="41" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/EmployeeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="38" column="49" lean-forward="true" selection-start-line="38" selection-start-column="49" selection-end-line="38" selection-end-column="49" />
         </state>
       </provider>
     </entry>

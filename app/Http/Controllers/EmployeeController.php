@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\EmployeeModel;
+use App\EmployeeUIAccessModel;
 use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
@@ -33,6 +34,16 @@ class EmployeeController extends Controller
         $user->email = $request->get("email");
         $user->password = Hash::make($request->get("password"));
         $user->save();
+
+        $employee_ui_access = new EmployeeUIAccessModel();
+        $employee_ui_access->user_id = $user->id;
+        $employee_ui_access->employee_id = $employee->id;
+        $employee_ui_access->is_customer_walking = $request->has("is_customer_walking");
+        $employee_ui_access->is_employee_registration = $request->has("is_employee_registration");
+        $employee_ui_access->is_view_customer_data = $request->has("is_view_customer_data");
+        $employee_ui_access->is_save_flow = $request->has("is_save_flow");
+        $employee_ui_access->is_save_unit = $request->has("is_save_unit");
+        $employee_ui_access->save();
 
         return 'Save Successful';
     }
