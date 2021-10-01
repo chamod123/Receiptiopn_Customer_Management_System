@@ -50,21 +50,44 @@
 
                         @if (Route::has('register'))
                             {{--<li class="nav-item">--}}
-                                {{--<a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>--}}
+                            {{--<a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>--}}
                             {{--</li>--}}
                         @endif
                     @else
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="/customer_save">Customer Walking &nbsp;&nbsp;&nbsp;&nbsp; </a>
-                        </li>
                         @if(Auth::user()->user_type == 'admin')
                             <li class="nav-item">
-                                <a class="nav-link" href="/employee_save">Employee Registration &nbsp;&nbsp;&nbsp;&nbsp;</a>
+                                <a class="nav-link" href="/customer_save">Customer Walking &nbsp;&nbsp;&nbsp;&nbsp; </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/employee_save">Employee Registration
+                                    &nbsp;&nbsp;&nbsp;&nbsp;</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="/view_customer_walking">View Customers Data &nbsp;&nbsp;&nbsp;&nbsp;</a>
                             </li>
+
+                        @else
+                            
+                            @if(session()->get('sess_employee_ui_details')['is_customer_walking'] == 1)
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/customer_save">Customer Walking
+                                        &nbsp;&nbsp;&nbsp;&nbsp; </a>
+                                </li>
+                            @endif
+
+                            @if(session()->get('sess_employee_ui_details')['is_employee_registration'] == 1)
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/employee_save">Employee Registration
+                                        &nbsp;&nbsp;&nbsp;&nbsp;</a>
+                                </li>
+                            @endif
+
+                            @if(session()->get('sess_employee_ui_details')['is_view_customer_data'] == 1)
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/view_customer_walking">View Customers Data &nbsp;&nbsp;&nbsp;&nbsp;</a>
+                                </li>
+                            @endif
                         @endif
 
 

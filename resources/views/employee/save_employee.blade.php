@@ -209,19 +209,30 @@
                     type: 'post',
                     data: $("#FormId").serialize(),
                     success: function (data) {
-                        // console.log(data);
-                        Swal.fire({
-                            position: 'center',
-                            icon: 'success',
-                            title: 'Employee Saved Successful!',
-                            showConfirmButton: false,
-                            timer: 4200
-                        }).then(
-                            // location.reload()
-                        )
+                        console.log(data);
+                        if(data.error){
+                            Swal.fire({
+                                position: 'center',
+                                icon: 'error',
+                                title: data.error_msg,
+                                showConfirmButton: false,
+                                timer: 1200
+                            })
+                        }else {
+                            Swal.fire({
+                                position: 'center',
+                                icon: 'success',
+                                title: 'Employee Saved Successful!',
+                                showConfirmButton: false,
+                                timer: 4200
+                            }).then(
+                                // location.reload()
+                            )
+                        }
 
                     },
                     error: function () {
+
                     }
                 });
             }
