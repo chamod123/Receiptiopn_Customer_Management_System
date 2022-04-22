@@ -86,6 +86,11 @@
         <p class="masthead-subheading font-weight-light mb-0">Save and analyse customer Data</p>
     </div>
 </header>
+<footer hidden>
+    <div class="col-md-12" style="background-color: #1abc5b;display: flex; justify-content: flex-end;">
+        <label style=" margin-right: 30px">Powered By: Chamod </label>
+    </div>
+</footer>
 <!-- Portfolio Section-->
 {{--<section class="page-section portfolio" id="portfolio">--}}
     {{--<div class="container">--}}

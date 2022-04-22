@@ -11,13 +11,13 @@
             {{--<input class="col-md-8" id="cus_name" name="cus_name" placeholder="Customer Name" required>--}}
             {{--</div>--}}
             {{csrf_field()}}
-            <div class="row" style="margin-top: 10px">
+            <div class="row" style="margin-top: 10px" hidden>
                 <label class="col-md-3">NIC</label>
                 <input class="col-md-8  form-control" id="nic" name="nic" placeholder="NIC">
             </div>
-            <div class="row" style="margin-top: 10px">
+            <div class="row" style="margin-top: 10px" hidden>
                 <label class="col-md-3">Contact Number</label>
-                <input class="col-md-8 form-control" id="mobile" name="mobile" placeholder="Contact Number" required>
+                <input class="col-md-8 form-control" id="mobile" name="mobile" placeholder="Contact Number">
             </div>
             <div class="row" style="margin-top: 10px" hidden>
                 <label class="col-md-3" hidden>Number Of Walking</label>
@@ -138,29 +138,29 @@
             // e.preventDefault();
             var validFunction = true;
 
-            if ($('#nic').val() == '') {
-                Swal.fire({
-                    position: 'center',
-                    icon: 'error',
-                    title: 'NIC Required!',
-                    showConfirmButton: false,
-                    timer: 1200
-                })
-                validFunction = false;
-                return;
-            }
+            // if ($('#nic').val() == '') {
+            //     Swal.fire({
+            //         position: 'center',
+            //         icon: 'error',
+            //         title: 'NIC Required!',
+            //         showConfirmButton: false,
+            //         timer: 1200
+            //     })
+            //     validFunction = false;
+            //     return;
+            // }
 
-            if ($('#mobile').val() == '') {
-                Swal.fire({
-                    position: 'center',
-                    icon: 'error',
-                    title: 'Mobile Required!',
-                    showConfirmButton: false,
-                    timer: 1200
-                })
-                validFunction = false;
-                return;
-            }
+            // if ($('#mobile').val() == '') {
+            //     Swal.fire({
+            //         position: 'center',
+            //         icon: 'error',
+            //         title: 'Mobile Required!',
+            //         showConfirmButton: false,
+            //         timer: 1200
+            //     })
+            //     validFunction = false;
+            //     return;
+            // }
 
             if ($('#no_of_walking').val() == '') {
                 Swal.fire({
@@ -212,7 +212,7 @@
                             icon: 'success',
                             title: 'Customer Saved Successful!',
                             showConfirmButton: false,
-                            timer: 4200
+                            timer: 10200
                         }).then(
                             location.reload()
                         )
