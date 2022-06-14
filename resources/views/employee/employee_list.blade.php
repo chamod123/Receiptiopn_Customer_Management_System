@@ -41,7 +41,7 @@
                             <td style="border: 1px solid black;">{{$employee->mobile}}</td>
                             <td style="border: 1px solid black;">{{$employee->email}}</td>
                             <td style="border: 1px solid black;">
-                                <a class="btn btn-warning" title="Edit User!" href="/user/edit/{{$employee->id}}/view">
+                                <a class="btn btn-warning" title="Edit User!" href="/employee/edit/{{$employee->id}}/view">
                                     <i class="fa fa-pencil" aria-hidden="true"></i>
                                 </a>
                                 @if($employee->status == 1)

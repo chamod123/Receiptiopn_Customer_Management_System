@@ -30,25 +30,32 @@
                     {{csrf_field()}}
                     <div class="row" style="margin-top: 10px">
                         <label class="col-md-3">Employee Name</label>
-                        <input class="col-md-8" id="employee_name" name="employee_name" placeholder="Employee Name">
+                        <input value="{{$employee->employee_name}}" class="col-md-8" id="employee_name" name="employee_name" placeholder="Employee Name">
                     </div>
                     <div class="row" style="margin-top: 10px">
                         <label class="col-md-3">Employee Code</label>
-                        <input class="col-md-8" id="employee_code" name="employee_code" placeholder="Employee Code"
+                        <input value="{{$employee->employee_code}}" class="col-md-8" id="employee_code" name="employee_code" placeholder="Employee Code"
                                required>
                     </div>
                     <div class="row" style="margin-top: 10px">
                         <label class="col-md-3">Mobile Number</label>
-                        <input class="col-md-8" id="mobile" name="mobile" placeholder="Mobile Number" required>
+                        <input value="{{$employee->mobile}}" class="col-md-8" id="mobile" name="mobile" placeholder="Mobile Number" required>
                     </div>
                     <div class="row" style="margin-top: 10px">
                         <label class="col-md-3">Email</label>
-                        <input class="col-md-8" id="email" name="email" placeholder="Email" required>
+                        <input value="{{$employee->email}}" class="col-md-8" id="email" name="email" placeholder="Email" required>
                     </div>
-                    <div class="row" style="margin-top: 10px">
+                    <div class="row" style="margin: 10px">
+                        <div class="col-md-12" style="margin-top: 10px;">
+                            <label class="col-md-12" style="color: red">  *  If you need to change password, enter new password </label>
+                        </div>
+                    </div>
+                    <div class="row">
                         <label class="col-md-3">Password</label>
                         <input class="col-md-8" id="password" name="password" placeholder="Password" required>
                     </div>
+
+                    <input hidden value="{{$employee->id}}" name="employee_id" id="employee_id">
 
                 </div>
             </div>
@@ -60,7 +67,7 @@
 
                     <br>
                     {{csrf_field()}}
-                    <div class="row" style="margin-top: 10px">
+                    <div hidden class="row" style="margin-top: 10px">
                         <label class="col-md-3">All Access</label>
                         <input onclick="select_all_access()" type="checkbox" class="col-md-1" style="height: 15px"
                                id="all_access" name="all_access">
@@ -69,25 +76,25 @@
                     <div class="row" style="margin-top: 10px">
                         <input type="checkbox" checked class="col-md-1" style="height: 15px" id="is_customer_walking"
                                name="is_customer_walking">
-                        <label class="col-md-11">Customer Walking</label>
+                        <label class="col-md-11">  Customer Walking</label>
                     </div>
                     <div class="row" style="margin-top: 10px">
-                        <input type="checkbox" class="col-md-1" style="height: 15px" id="is_employee_registration"
+                        <input @if($employee_ui_acces->is_employee_registration) checked @endif type="checkbox" class="col-md-1" style="height: 15px" id="is_employee_registration"
                                name="is_employee_registration">
                         <label class="col-md-11">Employee List</label>
                     </div>
                     <div class="row" style="margin-top: 10px">
-                        <input type="checkbox" class="col-md-1" style="height: 15px" id="is_view_customer_data"
+                        <input @if($employee_ui_acces->is_view_customer_data) checked @endif type="checkbox" class="col-md-1" style="height: 15px" id="is_view_customer_data"
                                name="is_view_customer_data">
                         <label class="col-md-11">View Customer Data</label>
                     </div>
                     <div class="row" style="margin-top: 10px">
-                        <input type="checkbox" class="col-md-1" style="height: 15px" id="is_save_flow"
+                        <input @if($employee_ui_acces->is_save_flow) checked @endif type="checkbox" class="col-md-1" style="height: 15px" id="is_save_flow"
                                name="is_save_flow">
                         <label class="col-md-11">Save Flow</label>
                     </div>
                     <div class="row" style="margin-top: 10px">
-                        <input type="checkbox" class="col-md-1" style="height: 15px" id="is_save_unit"
+                        <input @if($employee_ui_acces->is_save_unit) checked @endif type="checkbox" class="col-md-1" style="height: 15px" id="is_save_unit"
                                name="is_save_unit">
                         <label class="col-md-11">Save Unit</label>
                     </div>
@@ -107,7 +114,7 @@
 
         </div>
         <div class="row" style="margin-top: 10px">
-            <a onclick="save_customer_walking()" class="btn btn-success" style="width: 150px">Save Details</a>
+            <a onclick="save_customer_walking()" class="btn btn-success" style="width: 150px">Submit</a>
         </div>
         <div class="col-md-1">
 
@@ -187,17 +194,6 @@
                 return;
             }
 
-            if ($('#password').val() == '') {
-                Swal.fire({
-                    position: 'center',
-                    icon: 'error',
-                    title: 'Password Required!',
-                    showConfirmButton: false,
-                    timer: 1200
-                })
-                validFunction = false;
-                return;
-            }
 
 
             if (validFunction) {
@@ -205,7 +201,7 @@
                 // form_data.push({name: 'all_access', value: $("#all_access").is});
 
                 $.ajax({
-                    url: '/save/employee_data',
+                    url: '/user/edit_employee',
                     type: 'post',
                     data: $("#FormId").serialize(),
                     success: function (data) {
@@ -222,7 +218,7 @@
                             Swal.fire({
                                 position: 'center',
                                 icon: 'success',
-                                title: 'Employee Saved Successful!',
+                                title: 'Employee Edit Successful!',
                                 showConfirmButton: false,
                                 timer: 4200
                             }).then(

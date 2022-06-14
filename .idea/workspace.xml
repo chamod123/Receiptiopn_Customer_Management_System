@@ -5,14 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1761770c-59d6-495d-8933-0db28ec8e515" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/database/migrations/2022_06_14_153826_change_employee_2022_06_14.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/employee/employee_list.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Receiptiopn_Customer_Management_System.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Receiptiopn_Customer_Management_System.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/employee/edit_employee.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/EmployeeModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/EmployeeModel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/EmployeeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/EmployeeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/employee/employee_list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/employee/employee_list.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/employee/save_employee.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/employee/save_employee.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -435,7 +432,7 @@
       <workItem from="1633059359634" duration="137000" />
       <workItem from="1633109569194" duration="2058000" />
       <workItem from="1655104495207" duration="1524000" />
-      <workItem from="1655216836668" duration="2511000" />
+      <workItem from="1655216836668" duration="4726000" />
     </task>
     <task id="LOCAL-00001" summary="user registration and login">
       <created>1630321887535</created>
@@ -507,7 +504,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632850854695</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Employee list view">
+      <created>1655221931158</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1655221931158</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -577,7 +581,8 @@
     <MESSAGE value="customer waking data showing report view by date range" />
     <MESSAGE value="employee access credential change screen" />
     <MESSAGE value="Save Employee access data" />
-    <option name="LAST_COMMIT_MESSAGE" value="Save Employee access data" />
+    <MESSAGE value="Employee list view" />
+    <option name="LAST_COMMIT_MESSAGE" value="Employee list view" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
