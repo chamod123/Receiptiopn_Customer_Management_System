@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     {{--<script src="sm/ajax/libs/jquery/3.5.1/jquery.min.js"></script>--}}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -60,7 +61,7 @@
                                 <a class="nav-link" href="/customer_save">Customer Walking &nbsp;&nbsp;&nbsp;&nbsp; </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/employee_save">Employee Registration
+                                <a class="nav-link" href="/employee_list">Employee List
                                     &nbsp;&nbsp;&nbsp;&nbsp;</a>
                             </li>
                             <li class="nav-item">
@@ -76,12 +77,13 @@
                                 </li>
                             @endif
 
-                            @if(session()->get('sess_employee_ui_details')['is_employee_registration'] == 1)
-                                <li class="nav-item">
-                                    <a class="nav-link" href="/employee_save">Employee Registration
-                                        &nbsp;&nbsp;&nbsp;&nbsp;</a>
-                                </li>
-                            @endif
+                                @if(session()->get('sess_employee_ui_details')['is_employee_registration'] == 1)
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/employee_list">Employee List
+{{--                                        <a class="nav-link" href="/employee_save">Employee List--}}
+                                            &nbsp;&nbsp;&nbsp;&nbsp;</a>
+                                    </li>
+                                @endif
 
                             @if(session()->get('sess_employee_ui_details')['is_view_customer_data'] == 1)
                                 <li class="nav-item">

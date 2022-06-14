@@ -5,15 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1761770c-59d6-495d-8933-0db28ec8e515" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/database/migrations/2022_04_22_012944_change_user_2022_04_22.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2022_06_14_153826_change_employee_2022_06_14.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/employee/employee_list.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/Receiptiopn_Customer_Management_System.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Receiptiopn_Customer_Management_System.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/customer/save_customer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/customer/save_customer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/EmployeeModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/EmployeeModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/EmployeeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/EmployeeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/employee/save_employee.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/employee/save_employee.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,6 +122,9 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
@@ -252,6 +255,7 @@
     <option name="width" value="1940" />
     <option name="height" value="1050" />
   </component>
+  <component name="ProjectId" id="2AVpEDKU6Hj3HuWuKhgZrbhopQC" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -370,10 +374,16 @@
       <pane id="Scope" />
     </panes>
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/employee" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -382,16 +392,18 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.gutterIcons" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Git Repo\Receiptiopn_Customer_Management_System\Receiptiopn_Customer_Management_System\resources\views\employee" />
+      <recent name="D:\Git Repo\Receiptiopn_Customer_Management_System\Receiptiopn_Customer_Management_System" />
       <recent name="D:\GIT_Repo\Reception Customer management\Receiptiopn_Customer_Management_System\resources\views\customer" />
       <recent name="D:\GIT_Repo\Reception Customer management\Receiptiopn_Customer_Management_System\public\assets" />
       <recent name="D:\GIT_Repo\Reception Customer management\Receiptiopn_Customer_Management_System\resources\views\employee" />
-      <recent name="D:\GIT_Repo\Reception Customer management\Receiptiopn_Customer_Management_System\public" />
-      <recent name="D:\GIT_Repo\Reception Customer management\Receiptiopn_Customer_Management_System" />
     </key>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -422,6 +434,8 @@
       <workItem from="1633006435130" duration="709000" />
       <workItem from="1633059359634" duration="137000" />
       <workItem from="1633109569194" duration="2058000" />
+      <workItem from="1655104495207" duration="1524000" />
+      <workItem from="1655216836668" duration="2511000" />
     </task>
     <task id="LOCAL-00001" summary="user registration and login">
       <created>1630321887535</created>
@@ -548,6 +562,9 @@
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info id="Favorites" order="3" side_tool="true" />
     </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="user registration and login" />

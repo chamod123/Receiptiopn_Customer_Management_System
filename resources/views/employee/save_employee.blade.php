@@ -227,6 +227,7 @@
                                 timer: 4200
                             }).then(
                                 // location.reload()
+                                location.href = '/employee_list'
                             )
                         }
 

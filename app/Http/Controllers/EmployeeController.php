@@ -21,20 +21,25 @@ class EmployeeController extends Controller
     public function save_employee_data(Request $request)
     {
         try {
+
+
+            $user = new User();
+            $user->user_type = 'employee';
+            $user->first_name = $request->get("employee_name");
+            $user->last_name = '';
+            $user->email = $request->get("email");
+            $user->mobile_no = $request->get("mobile");
+            $user->password = Hash::make($request->get("password"));
+            $user->save();
+
             $employee = new EmployeeModel();
             $employee->employee_name = $request->get("employee_name");
             $employee->employee_code = $request->get("employee_code");
             $employee->mobile = $request->get("mobile");
             $employee->email = $request->get("email");
             $employee->password = $request->get("password");
+            $employee->user_id = $user->id;
             $employee->save();
-
-            $user = new User();
-            $user->user_type = 'employee';
-            $user->name = $request->get("employee_name");
-            $user->email = $request->get("email");
-            $user->password = Hash::make($request->get("password"));
-            $user->save();
 
             $employee_ui_access = new EmployeeUIAccessModel();
             $employee_ui_access->user_id = $user->id;
@@ -55,4 +60,14 @@ class EmployeeController extends Controller
             return ['error'=>true,'error_msg'=>$e->errorInfo[2]];
         }
     }
+
+
+    public function employee_list(){
+        $employs = EmployeeModel::all();
+
+        return view('employee.employee_list',[
+            'employs' => $employs
+        ]);
+    }
+
 }
